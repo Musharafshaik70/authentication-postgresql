@@ -1,0 +1,31 @@
+{
+    "name": "auth2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/index",
+        "build": "tsc -p .",
+        "dev": "tsc-watch --onSuccess \"node dist/index \""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "^11.14.0",
+            "onFail": "download"
+        }
+    },
+    "type": "module",
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/node": "^26.1.1",
+        "tsc-watch": "^7.2.1",
+        "typescript": "^7.0.2"
+    },
+    "dependencies": {
+        "express": "^5.2.1"
+    }
+}
